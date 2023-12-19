@@ -22,12 +22,12 @@
     <!-- navbar  -->
     <div class="container-flid">
         <div class="navbar bg-light navbar-light navbar-expand-sm ">    
-            <a href="#" class="navbar-brand mx-5 text-primary"> <span class="first h2">G</span><span class="text-dark h4">ANESH</span></a>
-            <button class="navbar-toggler me-3" data-bs-toggle="collapse" data-bs-target="#getit" >
-                <span class="navbar-toggler-icon"></span>
+            <a href="#" class="navbar-brand mx-5 " style="color: #7071E8;"> <span class="first h2">G</span><span class="text-dark h4">ANESH</span></a>
+            <button  class="navbar-toggler me-3" data-bs-toggle="collapse" data-bs-target="#getit" onclick="changeicon()" >
+                <i id="changicon" class="fa fa-bars" aria-hidden="true"></i>
             </button>
             <div class="collapse navbar-collapse justify-content-end me-5 ms-3" id="getit">
-                <ul class="navbar-nav ">
+                <ul class="navbar-nav text-center">
                     <li class="nav-item me-4">
                         <a href="#" class="nav-link">home</a>
                     </li>
@@ -35,7 +35,7 @@
                         <a href="#about" class="nav-link">about</a>
                     </li>
                     <li class="nav-item me-4">
-                        <a href="#services" class="nav-link">services</a>
+                        <a href="#projects" class="nav-link">projects</a>
                     </li>
                     <li class="nav-item me-4">
                         <a href="#contactus" class="nav-link">contact</a>
@@ -47,115 +47,126 @@
     <!-- banner -->
     <div class="container-fluid text-light d-flex align-items-center" id="banner">
         <span class="ms-5"> <p class="h4" style="color: rgba(255, 255, 255, 0.643);">Web Developer</p>
-            <h1 class="">hi my name is <span >ganesh</span> </h1><p class="text-light fst-italic">I am from Hyderabad</p>
+            <h1 class="">hi my name is <span >k ganesh</span> </h1><p class="text-light fst-italic">I am from Hyderabad</p>
+            <a  target="_blank" href="https://drive.google.com/file/d/1dVsY-_wXMpN9EakIcB40b5CGuPkBtYEw/view?usp=sharing"><button style="padding: 5px 10px 5px 10px;border-radius:5px;background-color:orange" >Download Resume</button></a>
         </span>
     </div>
     <!-- about -->
     <div class="about" id="about">
         <div class="container pt-5">
             <div class="row">
-                <div class="col">
+                <div class="col imgcen">
                     <img src="images/img3.jpg" class="rounded mx-auto d-block" alt="">
                 </div>
                 <div class="col">
                     <h1 class="text-center mt-2 h1 text-dark" >About Me</h1>
-                    <p class="about-text text-center" style="font-size: 1.2rem;"> I'm Ganesh, a web developer studying at Malla Reddy University. With a passion for technology and the internet, I've gained skills in HTML, CSS, JavaScript, Bootstrap and other web development languages. I've built responsive and user-friendly websites, and I'm excited to continue growing in my field.</p>
+                    <p class="about-text text-center" style="font-size: 1.2rem;"><p>Hi there, I'm Ganesh, currently a student at Mallareddy University, pursuing a degree in Computer Science and Engineering (CSE).</p>
+
+                        <p>In my journey so far, I have served as a team leader in application development and participated in the Smart India Hackathon. These experiences have honed my skills in leadership, teamwork, and coding.</p>
+                        
+                        <p>I have skills in Java and Python programming languages, as well as  Angular for dynamic web applications. Additionally, I specialize in frontend web development.</p>
+                        
+                        <p>Outside of the tech world, I enjoy listening to music, finding it to be a great source of relaxation and inspiration.</p></p>
                     <div class="title-tag mx-4 d-flex">
-                        <div class="col title-link mx-2" id="sk" onclick="skills()">Skills</div>
-                        <div class="col title-link me-4" id="ex" onclick="experience()">Experience</div>
-                        <div class="col title-link mx-3" id="ed" onclick="education()">Education</div>
+                        <div class="col title-link " id="sk" onclick="skills()">Skills</div>
+                        <div class="col title-link mx-4" id="ex" onclick="experience()">Experience</div>
+                        <div class="col title-link " id="ed" onclick="education()">Education</div>
                     </div>
                     <div class="content">
                         <div class="first-content d-flex ms-5 mt-3" id="skills">
-                            <dl>
-                                <dt class="text-primary">UI/UX</dt>
-                                <dd>Front End Web Developer </dd>
-                                <dt class="text-primary mt-3">PYTHON</dt>
-                                <dd>Beginer In Python</dd>
-                                <dt class="text-primary mt-3">AUTO CAD</dt>
-                                <dd>Expert In Auto Cad</dd>
-                            </dl>
+                            <ul style="font-size: 1.2rem;" >
+                                <li>Angular</li>
+                                <li>Python</li>
+                                <li>Java</li>
+                                <li>Front-end Web Development</li>
+                                <li>AutoCad</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- my services -->
-    <div id="services">
-        <h1 class="text-center pt-4 mb-3" style="font-family: 'Roboto Condensed', sans-serif;font-weight: 500;">My Services</h1>
+    <!-- my projects -->
+    <div id="projects">
+        <h1 class="text-center pt-4 mb-3" style="font-family: 'Roboto Condensed', sans-serif;font-weight: 500;">My Projects</h1>
         <div class="justify-content-center align-items-center d-flex">
             <div class="containers">
                 <div class="box">
-                    <i class="fa-solid fa-code serv"></i><h3 style="font-weight: 600;">UI/UX</h3>UI refers to the screens, buttons, toggles, icons, and other visual elements that you interact with when using a website, app, or other electronic device. <a href="#" style="color:black">Learn More</a>
+                    <h4 style="font-weight: 600;">Quiz App</h4>It is a quiz app that features five questions about the Cricket Match World Cup Final 2023. <a href="https://github.com/ganeshk314/BasicQuizApp" style="color:black">Explore More</a>
                 </div>
                 <div class="box">
-                    <i class="fa-solid fa-compass-drafting serv"></i><h3 style="font-weight: 600;">AUTO CAD</h3>AutoCAD stands for Computer-Aided Design. It allows a user to conceptualize ideas, product designs and drawings to the required level of technical accuracy.<a href="#" style="color:black">Learn More</a>
+                    <h4 style="font-weight: 600;">Trueshop</h4>An e-commerce website featuring exclusively eco-friendly products. The website is built using the Angular framework. <a href="https://github.com/ganeshk314/trueshop" style="color:black">Explore More</a>
                 </div>
                 <div class="box">
-                    <i class="fa-solid fa-pager serv"></i><h3 style="font-weight: 600;">WEB DESIGN</h3>Web designing is the process of planning and implementing the plan for designing a website in a way that is functional and offers a good user experience.<a href="#" style="color:black">Learn More</a>
+                    <h4 style="font-weight: 600;">Age Claculator</h4>It calculates the age based on the date of birth and the current date. <a href="https://agecalculatorrr.netlify.app/" style="color:black">Explore More</a>
                 </div>
             </div>
         </div>
     </div>
     <!-- contact us -->
-    <div id="contactus">
-        <div class="contactus">
-            <h1>Contact us</h1>
-            <form action="" method="">
-                <input type="text" name="name" placeholder="Name">
-                <input type="email" name="email " placeholder="Email">
-                <input type="text" name="subject" placeholder="Subject" >
-                <textarea name="message" id="" cols="30" rows="10" placeholder="Type message" ></textarea>
-                <input type="submit" value="Submit">
-            </form>
+    <div  id="contactus" class="contactus mb-3">
+        
+        <div class="block" >
+            <div class="cen">
+                <h2 class="pt-3" style="color: #ffffff;font-weight:500;" >Contact Us</h2>
+                <input type="text" placeholder="Name">
+                <input type="gmail" placeholder="Gmail" pattern="[a-zA-Z0-9._%+-]+@gmail\.com" required>
+            <input type="text" placeholder="Message" >
+            <input type="submit" >
+            </div>
         </div>
     </div>
     <!-- footer -->
     <div class="footer"><p>© 2023 Copyrights reserved</p></div>
     <!-- JavaScript -->
     <script>
+        var abc = true;
+        function changeicon(){
+            if(abc){
+                document.getElementById('changicon').innerHTML='<i class="fa fa-close" style="font-size:36px"></i>'
+                abc=false;
+            }
+            else{
+                document.getElementById('changicon').innerHTML='<i id="changicon" class="fa fa-bars" aria-hidden="true"></i>'
+                abc=true;
+            }
+        }
         function skills(){
             document.getElementById('skills').innerHTML=
-                                    ' <dl>\
-                                <dt class="text-primary">UI/UX</dt>\
-                                <dd>Front End Web Developer </dd>\
-                                <dt class="text-primary mt-3">PYTHON</dt>\
-                                <dd>Beginer In Python</dd>\
-                                <dt class="text-primary mt-3">AUTO CAD</dt>\
-                                <dd>Expert In Auto Cad</dd>\
-                            </dl>';
-            document.getElementById('sk').style.cssText='color:blue;';
+                                    '<ul style="font-size: 1.2rem;" >\
+                                        <li>Angular</li>\
+                                        <li>Python</li>\
+                                        <li>Java</li>\
+                                        <li>Front-end Web Development</li>\
+                                        <li>AutoCad</li>\
+                                    </ul>';
+            document.getElementById('sk').style.cssText='color:#7071E8;';
             document.getElementById('ex').style.cssText='color:black;';
             document.getElementById('ed').style.cssText='color:black;';
         }
         function experience(){
             document.getElementById('skills').innerHTML=
-                                    ' <dl>\
-                                <dt class="text-primary">NONE</dt>\
-                                <dd>No Experience Present</dd>\
-                                <dt class="text-primary mt-3">NONE</dt>\
-                                <dd>No Experience Present</dd>\
-                                <dt class="text-primary mt-3">NONE</dt>\
-                                <dd>No Experience Present</dd>\
-                            </dl>';
-            document.getElementById('ex').style.cssText='color:blue;';
+                                    ' <ul style="font-size: 1.2rem;" >\
+                                        <li>Currently interning at Codsoft.</li>\
+                                    </ul>';
+            document.getElementById('ex').style.cssText='color:#7071E8;';
             document.getElementById('sk').style.cssText='color:black;';
             document.getElementById('ed').style.cssText='color:black;';
         }
         function education(){
             document.getElementById('skills').innerHTML=
                                     ' <dl>\
-                                <dt class="text-primary">SCHOOLING</dt>\
+                                <dt class=""style="color: #7071E8;">SCHOOLING</dt>\
                                 <dd>Bhashyam High School </dd>\
-                                <dt class="text-primary mt-3">INTERMEDIATE</dt>\
+                                <dt class=" mt-3"style="color: #7071E8;">INTERMEDIATE</dt>\
                                 <dd>Sri Chaitanya Junior Kalasa</dd>\
-                                <dt class="text-primary mt-3">B-TECH</dt>\
+                                <dt class=" mt-3"style="color: #7071E8;">B-TECH</dt>\
                                 <dd>Malla Reddy University</dd>\
                             </dl>';
             document.getElementById('sk').style.cssText='color:black;';
             document.getElementById('ex').style.cssText='color:black;';
-            document.getElementById('ed').style.cssText='color:blue;';
+            document.getElementById('ed').style.cssText='color:#7071E8;';
         }
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js" integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
